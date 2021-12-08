@@ -1,0 +1,599 @@
+/* GENERAL */
+
+body {
+    margin: 0px;
+    display: grid;
+    text-align: center;
+    grid-template-rows: 60vh 15vh 140vh repeat(5, max-content) 30vh;
+    grid-template-columns: 35vw 1fr;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "alaune alaune"
+        "aside blocintro"
+        "aside decouverte_montreal"
+        "aside escapade_sydney"
+        "aside enroute_rio"
+        "partners partners"
+        "footer footer";
+    font-family: 'Rocknroll One', sans-serif;
+}
+
+button {
+    background-color: #f2f7ba;
+    border-radius: 5px;
+    color: #2b80b9;
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.6s;
+    place-self: center;
+}
+
+button:hover {
+    background-color: #2b80b9;
+    color: #f2f7ba;
+    transition: 0.6s;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+header {
+    grid-area: header;
+    display: grid;
+    background-image: linear-gradient(rgba(116, 230, 214, 0.4), rgba(250, 247, 48, 0.3)), url(../img/beach.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#titres {
+    align-self: center;
+    color: white;
+}
+
+header i {
+    font-size: 2.3em;
+    margin-right: 20px;
+}
+
+header h1 {
+    letter-spacing: 1px;
+}
+
+header h3 {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+/* NAVBAR */
+
+nav {
+    grid-area: nav;
+    display: grid;
+    background-color: #f2f7ba;
+    color: #2b80b9;
+}
+
+#burger {
+    display: none;
+    font-size: 3em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#titreburger {
+    display: none;
+}
+
+#liensnav {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 37px;
+}
+
+#liensnav a:hover {
+    color: grey;
+}
+
+/* A LA UNE */
+
+#alaune {
+    grid-area: alaune;
+    display: grid;
+    background-image: linear-gradient(rgba(116, 230, 214, 0.4), rgba(250, 247, 48, 0.3)), url(../img/bali.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-template-columns: 5vw repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#bali {
+    grid-row: 2;
+    grid-column: 2;
+    background-color: #2b80b9;
+    padding: 35px;
+    color: white;
+    border-radius: 5%;
+    margin-top: 450px;
+}
+
+#bali i {
+    font-size: 3.4em;
+    color: white;
+}
+
+#bali h1 {
+    border-bottom: solid 1px white;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+#bali h2 {
+    font-size: 3.5em;
+    margin-top: 0px;
+}
+
+#bali p {
+    margin-bottom: 60px;
+}
+
+#bali cite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bali img {
+    border-radius: 50%;
+    transform: scale(0.7)
+}
+
+/* PARTIE GAUCHE */
+
+aside {
+    grid-area: aside;
+    padding: 20px;
+    background-color: #2b80b9;
+    color: white;
+}
+
+.photopaysages {
+    width: 25vw;
+    height: 15vw;
+    border: solid 3px white;
+    margin-bottom: 30px;
+}
+
+.photopaysages:hover {
+    filter: contrast(150%);
+}
+
+.personnes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 70px 10px 70px;
+    box-shadow: 5px 5px 5px #f2f7ba;
+    border: 2px solid #f2f7ba;
+    border-radius: 5%;
+    margin-bottom: 20px;
+}
+
+.notes {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside h3 {
+    font-size: 1.8em;
+    margin-top: 0px;
+}
+
+aside cite img {
+    border-radius: 50%;
+    height: 70px;
+}
+
+aside cite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+#titreslespluspopulaires i {
+    font-size: 5em;
+}
+
+#titreslespluspopulaires h1 {
+    font-size: 3em;
+}
+
+#titreslespluspopulaires h1:after {
+    display: block;
+    height: 2px;
+    background-color: #f2f7ba;
+    width: 10em;
+    content: "";
+    margin: 15px auto;
+}
+
+/* DERNIERS ARTICLES */
+/* INTRO & GENERAL */
+#blocintro i {
+    font-size: 5em;
+    color: #2b80b9
+}
+
+#derniersarticles {
+    margin-top: 80px;
+}
+
+#derniersarticles h1 {
+    font-size: 3em;
+    color: #2b80b9;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#derniersarticles h1:after {
+    display: block;
+    height: 2px;
+    background-color: #f2f7ba;
+    width: 10em;
+    content: "";
+    margin: 15px auto;
+}
+
+#blocintro:after {
+    height: 2px;
+    background-color: #2b80b9;
+    width: 50em;
+    content: " ";
+    margin: 10px auto;
+}
+
+.imagesintro {
+    width: 30%;
+    height: 200px;
+}
+
+#blocintro {
+    grid-area: blocintro;
+    padding: 20px 100px 0px 100px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+#blocimagesintro {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.imagearticle {
+    width: 35vw;
+    border: 5px solid #f2f7ba;
+    margin-bottom: 40px;
+}
+
+.imagearticle:hover {
+    filter: contrast(150%);
+}
+
+.imagesintro:hover {
+    filter: contrast(150%);
+}
+
+#derniersarticles p {
+    font-size: 1.2em;
+    margin-bottom: 80px;
+}
+
+#derniersarticles cite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 10px;
+}
+
+#derniersarticles cite div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#derniersarticles cite img {
+    border-radius: 50%;
+    height: 70px;
+}
+
+#derniersarticles cite i {
+    font-size: 2em;
+    color: #2b80b9;
+}
+
+/* ARTICLE 1 */
+#decouverte-montreal {
+    grid-area: decouverte_montreal;
+}
+
+#decouverte_montreal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 100px 0px 100px;
+}
+
+#decouverte_montreal:after {
+    height: 2px;
+    background-color: #2b80b9;
+    width: 50em;
+    content: " ";
+    margin: 10px auto;
+}
+
+/* ARTICLE 2 */
+#escapade_sydney {
+    grid-area: escapade_sydney;
+}
+
+#escapade_sydney {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 100px 0px 100px;
+}
+
+#escapade_sydney:after {
+    height: 2px;
+    background-color: #2b80b9;
+    width: 50em;
+    content: " ";
+    margin: 10px auto;
+}
+
+/* ARTICLE 3 */
+#enroute_rio {
+    grid-area: enroute_rio;
+}
+
+#enroute_rio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 100px 0px 100px;
+}
+
+#enroute_rio:after {
+    height: 2px;
+    background-color: #2b80b9;
+    width: 50em;
+    content: " ";
+    margin: 10px auto;
+}
+
+/* PARTENAIRES */
+#partners {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: partners;
+}
+
+#plane {
+    grid-column: span 3;
+    grid-row: 1;
+    background-image: linear-gradient(rgba(116, 230, 214, 0.4), rgba(250, 247, 48, 0.3)), url(../img/plane.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#partners img {
+    width: 13vw;
+    transition: 0.5s;
+}
+
+#lespartenaires {
+    grid-column: span 3;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    background-color: #2b80b9;
+}
+
+#partners i {
+    color: #2b80b9;
+    margin-top: 10px;
+    font-size: 5em;
+}
+
+#partners h1 {
+    color: #2b80b9;
+    font-size: 3.3em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#partners h1:after {
+    display: block;
+    height: 2px;
+    background-color: #f2f7ba;
+    width: 10em;
+    content: "";
+    margin: 15px auto;
+}
+
+#partners p {
+    color: white;
+    font-size: 1.5em;
+}
+
+#lespartenaires h2 {
+    color: white;
+}
+
+#lespartenaires img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+    transition: 0.5s;
+}
+
+/* FOOTER */
+
+footer {
+    grid-area: footer;
+    display: grid;
+    place-items: center center;
+    background-color: #f2f7ba;
+}
+
+footer h5 {
+    font-size: 1.4em;
+    color: #2b80b9;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+footer h6 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 2em;
+    color: #2b80b9;
+    margin-top: 20px;
+}
+
+footer h6 i {
+    transition: 0.5s
+}
+
+footer h6 i:hover {
+    color: white;
+    transform: scale(1.2);
+    transition: 0.5s
+}
+
+/* RESPONSIVE TAB & PHONE */
+
+@media screen and (max-width:991px) {
+    #burger {
+        display: block;
+        text-align: left;
+    }
+
+    #titreburger {
+        display: block;
+    }
+
+    #titresnav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #liensnav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #alaune {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        background-attachment: unset;
+    }
+    #bali img {
+        height:50px;
+    }
+    #bali p {
+        margin:0;
+    }
+    #bali {
+        font-size:10px;
+        height:auto;
+        margin:0;
+        padding:20px;
+    }
+
+}
+
+/* RESPONSIVE TAB */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 40vh 100vh auto;
+        grid-template-areas:
+            "header header"
+            "alaune alaune"
+            "aside blocintro"
+            "aside decouverte_montreal"
+            "aside escapade_sydney"
+            "aside enroute_rio"
+            "partners partners"
+            "footer footer";
+    }
+    .imagesintro {
+        width:80vw;
+    }
+}
+
+/* RESPONSIVE PHONE */
+@media screen and (max-width: 767px) {
+    body {
+        grid-template-columns: 100vw;
+        grid-template-rows: 50vh 100vh auto;
+        grid-template-areas:
+            "header"
+            "alaune"
+            "blocintro"
+            "decouverte_montreal"
+            "escapade_sydney"
+            "enroute_rio"
+            "aside"
+            "partners"
+            "footer"
+    }
+    .imagesintro, .imagearticle, .photopaysages {
+        width:80vw;
+        height:auto;
+    }
+    #partners {
+        grid-template-columns: 100vw;
+        grid-template-rows: 50vh auto;
+    }
+    #partners img {
+        width:80vw;
+    }
+    #lespartenaires {
+        grid-template-columns: 1fr;
+    }
+    #plane {
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        width:100vw;
+    }
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBlog</title>
+    <link rel="stylesheet" href="ressources/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div id="titres">
+            <h1><i class="far fa-compass"></i>travelblog.com</h1>
+            <h3>Racontez-nous vos plus beaux souvenirs</h3>
+        </div>
+    </header>
+    <!-- NAVBAR -->
+    <nav>
+        <div id="titresnav">
+            <i id="burger" class="fas fa-bars"></i>
+            <h1 id="titreburger"><i class="far fa-compass"></i>travelblog.com</h1>
+        </div>
+        <div id="liensnav">
+            <a href="index.html">Destinations</a>
+            <a href="index.html">Itinéraires et circuits</a>
+            <a href="index.html">Top 10 articles</a>
+            <a href="index.html">Poster un article</a>
+        </div>
+    </nav>
+    <!-- A LA UNE -->
+    <section id="alaune">
+        <div id="bali">
+            <i class="fas fa-globe-americas"></i>
+            <h1>À la une</h1>
+            <h2>Bali</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip.
+            </p>
+            <div id="signature">
+                <cite><img src="ressources/img/users/emilie.jpg">Par Emilie</cite>
+            </div>
+            <button>Lire l'article</button>
+        </div>
+
+    </section>
+    <!-- PARTIE GAUCHE -->
+    <aside>
+        <div id="titreslespluspopulaires">
+            <i class="fas fa-map-marked-alt"></i>
+            <h1>Les + populaires</h1>
+        </div>
+        <div class="personnes">
+            <div class="notes">
+                <h2 id="num1">#1</h2>
+                <h2 id="note_1"><i class="fas fa-star"></i>4.7/5</h2>
+            </div>
+            <h3>Une semaine à Santorini</h3>
+            <cite id="signsteven"><img src="ressources/img/users/Steven79.jpg">Steven79<i
+                    class="fas fa-calendar"></i>24/02/2021</cite>
+            <img class="photopaysages" src="ressources/img/destination1.jpg">
+            <button>Lire l'article</button>
+        </div>
+        <div class="personnes">
+            <div class="notes">
+                <h2 id="num2">#2</h2>
+                <h2 id="note_2"><i class="fas fa-star"></i>4.6/5</h2>
+            </div>
+            <h3>Séjour de rêve à Miami</h3>
+            <cite id="signemma"><img src="ressources/img/users/emma2021.jpg">Emma2021<i
+                    class="fas fa-calendar"></i>03/02/2021</cite>
+            <img class="photopaysages" src="ressources/img/miami.jpg">
+            <button>Lire l'article</button>
+        </div>
+        <div class="personnes">
+            <div class="notes">
+                <h2 id="num3">#3</h2>
+                <h2 id="note_3"><i class="fas fa-star"></i>4.3/5</h2>
+            </div>
+            <h3>L.A., here I come !</h3>
+            <cite id="signjulia"><img src="ressources/img/users/julia.jpg">julia<i
+                    class="fas fa-calendar"></i>15/02/2021</cite>
+            <img class="photopaysages" src="ressources/img/losangeles.jpg">
+            <button>Lire l'article</button>
+        </div>
+        <div class="personnes">
+            <div class="notes">
+                <h2 id="num4">#4</h2>
+                <h2 id="note_4"><i class="fas fa-star"></i>4.2/5</h2>
+            </div>
+            <h3>Les Maldives à la folie</h3>
+            <cite id="signjohanna"><img src="ressources/img/users/johanna84.jpg">johanna84<i
+                    class="fas fa-calendar"></i>27/12/2020</cite>
+            <img class="photopaysages" src="ressources/img/maldives.jpg">
+            <button>Lire l'article</button>
+        </div>
+        <div class="personnes">
+            <div class="notes">
+                <h2 id="num5">#5</h2>
+                <h2 id="note_5"><i class="fas fa-star"></i>4.2/5</h2>
+            </div>
+            <h3>Week-end à Toronto</h3>
+            <cite id="signnathalie"><img src="ressources/img/users/nathalie.jpg">Nathalie<i
+                    class="fas fa-calendar"></i>11/03/2021</cite>
+            <img class="photopaysages" src="ressources/img/toronto.jpg">
+            <button>Lire l'article</button>
+        </div>
+        <div id="boutonfinal">
+            <button>Classement complet</button>
+        </div>
+    </aside>
+    <!-- DERNIER ARTICLES -->
+    <section id="derniersarticles">
+        <div id="blocintro">
+            <i class="fas fa-clock"></i>
+            <h1>Derniers articles</h1>
+            <div id="blocimagesintro">
+                <img class="imagesintro" src="ressources/img/montreal.jpg">
+                <img class="imagesintro" src="ressources/img/sydney.jpg">
+                <img class="imagesintro" src="ressources/img/rio.jpg">
+            </div>
+            <button>Tous les articles</button>
+        </div>
+        <!-- ARTICLE 1 -->
+        <div id="decouverte_montreal">
+            <h1>Découverte de Montréal</h1>
+            <cite>
+                <div><img src="ressources/img/users/emma2021.jpg">Emma2021</div>
+                <div><i class="fas fa-clock"></i>12/03/2021 -
+                    10h20</div>
+            </cite>
+            <img class="imagearticle" src="ressources/img/montreal.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+            <button>Lire l'article</button>
+        </div>
+        <!-- ARTICLE 2 -->
+        <div id="escapade_sydney">
+            <h1>Escapade à Sydney</h1>
+            <cite>
+                <div><img src="ressources/img/users/Steven79.jpg">Steven79</div>
+                <div><i class="fas fa-clock"></i>11/03/2021 -
+                    14h27</div>
+            </cite>
+            <img class="imagearticle" src="ressources/img/sydney.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+            <button>Lire l'article</button>
+        </div>
+        <!-- ARTICLE 3 -->
+        <div id="enroute_rio">
+            <h1>En route pour Rio !</h1>
+            <cite><img src="ressources/img/users/julia.jpg">julia<i class="fas fa-clock"></i>11/03/2021 -
+                9h32</cite>
+            <img class="imagearticle" src="ressources/img/rio.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+            <button>Lire l'article</button>
+        </div>
+    </section>
+    <!-- PARTENAIRES -->
+    <section id="partners">
+        <div id="plane">
+            <i class="fas fa-plane-departure"></i>
+            <h1>Nos partenaires</h1>
+            <p>PROMO : Bénéficiez de 10% de réduction avec le code : travelblog2021</p>
+        </div>
+        <div id="lespartenaires">
+            <div id="grid_airlines">
+                <h2>Grid Airlines</h2>
+                <img src="ressources/img/company1.png">
+            </div>
+            <div id="world_air_company">
+                <h2>World Air Company</h2>
+                <img src="ressources/img/company2.png">
+            </div>
+            <div id="sky_masters">
+                <h2>Sky Masters</h2>
+                <img src="ressources/img/company3.png">
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <h5><i class="far fa-copyright"></i>2021 travelblog.com</h5>
+        <h6><i class="fab fa-facebook-square"></i><i class="fab fa-twitter"></i><i class="fab fa-linkedin"></i><i
+                class="fab fa-instagram"></i></h6>
+    </footer>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            // au clic sur hamburger, afficher ou masquer le menu (en responsive)
+            $('#burger').on('click', function () {
+                if ($('#liensnav').css('display') == 'none') {
+                    $('#liensnav').css('display', 'block');
+                    $('#liensnav').css('display', 'flex');
+                }
+                else {
+                    $('#liensnav').css('display', 'none');
+                }
+            });
+
+            // afficher le menu quand on passe en taille desktop (même s'il est masqué)
+            window.addEventListener('resize', () => {
+                let width = window.innerWidth;
+                if (width > 1080) {
+                    $('#liensnav').css('display', 'block');
+                    $('#liensnav').css('display', 'flex');
+                }
+            });
+        })
+
+    </script>
+</body>
+
+</html>
